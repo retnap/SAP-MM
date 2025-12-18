@@ -151,11 +151,71 @@
 
 ---
 
-MM01 -> Malzeme Yaratma Ekranı 
+## MM01 -> Malzeme Yaratma Ekranı 
 
-MM02 -> Malzeme Değiştirme Ekranı 
+<img width="837" height="617" alt="13_mm01_1" src="https://github.com/user-attachments/assets/1c47eae0-e7e9-4c2e-aade-7e7873ee84f1" />
 
-MM03 -> Malzeme Görüntüleme Ekranı 
++ Temel Veriler 1 ve Temel Veriler 2 seçildi.
+
++ Satınalma seçildi.
+
++ Depolama 1 ve Depolama 2 seçildi.
+
++ Muhasebe 1 ve Muhasebe 2 seçildi.
+
++ **Not:** Bu seçimleri kaydedip sonrasında kullanmak için sağ altta bulunan "Ön Ayarlar" butonuna bas. 
+
+**ROH:** SAP'nin standart malzeme türü. Bir hammaddeyi temsil eder. Dışarıdan satın alınabilir. Stokları takip edilebilir. Değeri takip edilebilir. 
+
+Hammadde işlenerek mamule ya da yarı mamule dönüşür. 
+
+**HALB:** Sistemdeki yarı mamulü temsil eder. Dışarıdan satın alınabilir ve değeri vardır. 
+
+**FERT:** Sistemdeki mamulü temsil eder. İsteğe bağlı satın alınabilir. Değeri ve stoğu vardır. 
+
+**NLAG:** Sarf, depolanmayan malzemeleri temsil eder. 
+
+**SERV:** Hizmet ürününü temsil eder. 
+
+<img width="826" height="401" alt="15_mm01_3" src="https://github.com/user-attachments/assets/81b944f8-e8fd-44d4-a24c-e5857a02432e" />
+
+
+
+<img width="734" height="783" alt="16_mm01_4" src="https://github.com/user-attachments/assets/c2d4de4b-6464-454f-8f76-9c239021b769" />
+
++ Temel Veriler 1, görselde doldurulduğu gibidir. 
+
++ Temel Veriler 2'de aslında **konfigüre edilebilirlik** durumu kontrol edilir. Örnek olarak, bir araba alırken siyah rengi yerine bin lira farkla kırmızı rengini almak denebilir.
+
+  + Temel Veriler 2'de bir değişiklik yapılmadı.
+ 
+<img width="715" height="610" alt="17_mm01_5" src="https://github.com/user-attachments/assets/8ec34da2-8daf-487d-8c83-b21b318a0911" />
+ 
++ Yukarıdaki görselde Temel Veriler 1 ve 2 ekranlarından sonra **Satın Alma** ekranına geldik.
+  + Temel ölçü birimi olarak daha önceden "KG" seçilmişti.
+  + SAS Ölçü Birimi olarak (Satın Alma Ölçü Birimi) "PAK" -paket- seçildi.
+  + Paket seçildikten sonra çıkan ekranda 1 pakette kaç kg olacağını girmemiz için ekran çıkıyor.
+  + Satın Alma Grubu "200" olarak seçildi.
+  + Parti Yönetimi kutucuğu işaretlendi.
+
++ Depolama 1 ekranında depo türü, raf ömrü, kalan süresi girildi.
+  + Depolama 2'de bir değişiklik yapılmadı.
+
+
+<img width="713" height="684" alt="18_mm_6" src="https://github.com/user-attachments/assets/54cc320d-d5c8-4270-a84a-025ff5e7079c" />
+
++ Muhasebe 1 ekranına geçildi.
+  + Değerleme sınıfı olarak 7900 seçildi. Bu da demek oluyor ki 7900 'ın altına bağlı olan ana hesaplar benim için çalışacak.
+  + Muhasebe 2 'de herhangi bir değişiklik yapılmadı.
+ 
++ Enter tuşuna bastıktan sonra önceki verilerin kaydedilmesi hakkında bir uyarı geldi. Evet diyip MM01 ekranına geri dönüyoruz. Bu şekilde bir malzeme oluşturmuş olduk.
+
++ **NOT:** Oluşturduğumuz malzemeye atanan kod "4451".    
+--- 
+
+## MM02 -> Malzeme Değiştirme Ekranı 
+
+## MM03 -> Malzeme Görüntüleme Ekranı 
 
 
 
