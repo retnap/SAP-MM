@@ -206,6 +206,9 @@ Hammadde işlenerek mamule ya da yarı mamule dönüşür.
 
 + Muhasebe 1 ekranına geçildi.
   + Değerleme sınıfı olarak 7900 seçildi. Bu da demek oluyor ki 7900 'ın altına bağlı olan ana hesaplar benim için çalışacak.
+  + **Değerleme Sınıfı (Valuation Class):** Bu malzemeyle ilgili parasal hareketler hangi muhasebe hesaplarında izlenecek ?
+    + Uzun tanım olarak; malzemenin muhasebe kayıtları hangi G/L (ana hesaplara) gideceğini belirleyen alan.
+    + SAP, hangi ana hesabı kullanacağını **Otomatik Hesap Ataması (Automatic Account Determination)** üzerinden **Değerleme Sınıfına** bakarak ilerler.     
   + Muhasebe 2 'de herhangi bir değişiklik yapılmadı.
  
 + Enter tuşuna bastıktan sonra önceki verilerin kaydedilmesi hakkında bir uyarı geldi. Evet diyip MM01 ekranına geri dönüyoruz. Bu şekilde bir malzeme oluşturmuş olduk.
@@ -222,6 +225,83 @@ Hammadde işlenerek mamule ya da yarı mamule dönüşür.
 ## MM03 -> Malzeme Görüntüleme Ekranı 
 
 <img width="722" height="620" alt="21_mm03_1" src="https://github.com/user-attachments/assets/8830c513-ac25-4339-899d-8ee403c86b1e" />
+
+
+---
+
+## BP -> Muhatap Düzenleme 
+
++ İş ortağı anlamına gelir. Ona ya mal satılıyordur ya da ondan mal alınıyordur.
+
+<img width="862" height="833" alt="22_bp_1" src="https://github.com/user-attachments/assets/5b8affa6-d72f-4372-8309-1683db1d17cc" />
+
++ BP işlem kodunu girip Muhata Düzenleme ekranı geldikten sonra, üstte bulunan **"Organizasyon"** butonuna basıyoruz.
+  + **Gruplama** olarak T001 Yurt İçi Muhatap seçildi.
+  + Adres ekranı otomatik olarak karşımıza çıktı.
+  + Muhatabın **"Hitap Biçimi"** olarak 0003 Şirket seçildi.
+  + **"Ad"** kısmına muhatabın adı yazıldı.
+  + **"Arama Terimleri"** kısmına, arama çubuğuna yazılacak terimi giriyoruz.
+  + Alt kısımda bulunan adres kısımlarını dolduruyoruz. Detaylı doldurmak istersek bloğun sağ tarafta bulunan "+" simgesine basıyoruz.
+  + Tüm bilgileri girdikten sonra Kontrol Et (F8) butonuna basıyoruz.
+  + Hatasız ise Kaydet butonuna basıyoruz. Bu işlemden sonra sistem otomatik olarak muhatap kodu atıyor.
+
+---
+
+<img width="890" height="600" alt="25_bp_4" src="https://github.com/user-attachments/assets/78dda943-1397-4ca3-99f9-4f6d9d0928f3" />
+
++ Bu işlemden sonra "Muhatap Rolü" değerini **FLVN00 Satıcı - FI** seçiyoruz.
+  + Değer seçildikten sonra sağ üstte **şirket kodu** butonu çıkıyor. Yani "hangi şirket kodu için bunu satıcı yapacaksın" diyor.
+  + Şirket kodu olarak TR03 seçildi.
+  + **Mutabakat Hesabı** olarak "3202021000 Satıcılar Hesabı Yurt İçi" seçildi. Yani para hangi ana hesaba ödenecek durumu seçilir.
+  + Satıcı:Ödeme İşlemleri ekranına geliyoruz. **Ödeme Koşulu** olarak 0003 seçildi.
+  + Kaydet butonuna tıkladığımızda artık **satıcı kodu** otomatik olarak sistem tarafından atanır.
+
+---
+
+<img width="1033" height="604" alt="26_bp_5" src="https://github.com/user-attachments/assets/8ac97524-6186-40b4-8cde-1395d0a5775d" />
+
++ Bu işlemden sonra da "Muhatap Rolü" değerini **FLVN01 Satıcı - MM** seçiyoruz.
+  + Değer seçildikten sonra sağ üstte **Satınalma** butonu çıkıyor.
+  + **SA Organizasyonu** olarak "1710" seçildi.
+  + **SAS Para Birimi** olarak "TRY" seçildi.
+  + Varsa ödeme koşulları ve aşağıda bulunan koşullar eklenebilir.
+  + Tüm işlemlerden sonra "Kaydet" butonuna basıyoruz. 
+
+---
+
+<img width="976" height="393" alt="27_bp_6" src="https://github.com/user-attachments/assets/e51694fa-8b46-4da3-b311-be4cc2f36c2e" />
+
++ Oluşturulan muhatabı görüntülemek ve detayına inmek için tekrardan BP işlem kodunu kullanıyoruz.
+
++ "Ad"a göre arama yapabiliriz. Muhatap gözükürse çift tıklayarak detayına ulaşabiliriz.
+
+---
+
+<img width="891" height="577" alt="28_bp_7" src="https://github.com/user-attachments/assets/95337266-99b0-4077-98e2-c04e27f02dc4" />
+
++ **SE16N** transaction kodu ile **BUT000** Muhatap Genel Veriler tablosuna geliyoruz.
+
++ Oluşturulan Muhatap kodunu ilgili alana girdikten sonra sol üstte bulunan yürütme butonuna (F8) basıyoruz.
+
+<img width="1101" height="350" alt="29_bp_8" src="https://github.com/user-attachments/assets/b48f1901-a904-42c3-a94c-9d4584102c7b" />
+
++ Böylece oluşturulan muhatabın detaylı bilgilerine ulaşabiliriz.
+
+---
+
+<img width="872" height="422" alt="30_bp_9" src="https://github.com/user-attachments/assets/b5d222ef-fd62-43d6-a1a6-f94cbe9b11d1" />
+
++ Önceki BUT000 ekranından Muhatap GUID'sini kopyalıyoruz.
+
++ Yine SE16N işlem kodundan **CVI_VEND_LINK** tablosuna geliyoruz.
+
++ Kopyaladığımız Muhatap GUID'sini ilgili alana yapıştırıyoruz ve sol üstte bulunan yürütme butonuna (F8) basıyoruz.
+
+<img width="679" height="328" alt="31_bp_10" src="https://github.com/user-attachments/assets/e833dce1-db41-4534-910f-9dbbb47e0dc6" />
+
++ Yapılan işlemler sonucunda Muhatabın **satıcı numarasını** buluyoruz.
+
+--- 
 
 
 
