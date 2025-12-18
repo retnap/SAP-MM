@@ -215,8 +215,13 @@ Hammadde işlenerek mamule ya da yarı mamule dönüşür.
 
 ## MM02 -> Malzeme Değiştirme Ekranı 
 
+<img width="764" height="620" alt="19_mm02_1" src="https://github.com/user-attachments/assets/1392ec70-8c0d-4a04-8b2f-311b0dd7b0d0" />
+
+<img width="716" height="622" alt="20_mm02_2" src="https://github.com/user-attachments/assets/532d29de-057a-47dd-9b00-d25c78fe6e68" />
+
 ## MM03 -> Malzeme Görüntüleme Ekranı 
 
+<img width="722" height="620" alt="21_mm03_1" src="https://github.com/user-attachments/assets/8830c513-ac25-4339-899d-8ee403c86b1e" />
 
 
 
