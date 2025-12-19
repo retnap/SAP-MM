@@ -229,7 +229,7 @@ Hammadde işlenerek mamule ya da yarı mamule dönüşür.
 
 ---
 
-## BP -> Muhatap Düzenleme 
+## BP -> Muhatap Düzenleme 
 
 + İş ortağı anlamına gelir. Ona ya mal satılıyordur ya da ondan mal alınıyordur.
 
@@ -256,6 +256,21 @@ Hammadde işlenerek mamule ya da yarı mamule dönüşür.
   + Satıcı:Ödeme İşlemleri ekranına geliyoruz. **Ödeme Koşulu** olarak 0003 seçildi.
   + Kaydet butonuna tıkladığımızda artık **satıcı kodu** otomatik olarak sistem tarafından atanır.
 
++ Peki bu işlemler neden yapıldı?
+  + Çünkü muhasebe (FI) açısından bu muhatap artık **borçlu/alacaklı** olarak izlenecek.
+  + FLNV00 rolünde:
+    + Şirket kodu bazlı tanımlama yapılır.
+    + Muhasebe entegrasyonu sağlanır.
+  + Tipik alanlar:
+    + Hesap mutabakat hesabı (reconciliation account)
+    + Ödeme koşulları
+    + Ödeme yöntemi
+    + Vergi bilgileri
+  + Amaç:
+    + "Bu satıcı ile finansal kayıtları hangi şirket kodunda ve nasıl tutacağım?"
+  + FI olmadan:
+    + Fatura girişi yapılamaz.
+    + Satıcı muhasebede takip edilemez.   
 ---
 
 <img width="1033" height="604" alt="26_bp_5" src="https://github.com/user-attachments/assets/8ac97524-6186-40b4-8cde-1395d0a5775d" />
@@ -265,7 +280,23 @@ Hammadde işlenerek mamule ya da yarı mamule dönüşür.
   + **SA Organizasyonu** olarak "1710" seçildi.
   + **SAS Para Birimi** olarak "TRY" seçildi.
   + Varsa ödeme koşulları ve aşağıda bulunan koşullar eklenebilir.
-  + Tüm işlemlerden sonra "Kaydet" butonuna basıyoruz. 
+  + Tüm işlemlerden sonra "Kaydet" butonuna basıyoruz.
+ 
++ Peki bu işlemler neden yapıldı?
+  + Çünkü bu satıcıdan **mal/hizmet** satın alınacak.
+  + FLVN01 rolünde:
+    + Satınalma organizasyonuna özel ayarlar yapılır.
+  + Tipik alanlar:
+    + Satınalma organizasyonu
+    + Teslim şekli (incoterms)
+    + Satınalma para birimi
+    + Minimum sipariş miktarı
+    + Satıcı değerlendirme, toleranslar
+  + Amaç:
+    + "Bu satıcıdan satınalma süreçlerinde nasıl çalışacağım?"
+  + MM olmadan:
+    + Satınalma siparişi (PO) oluşturulamaz.
+    + Malzeme tedariki yapılamaz.    
 
 ---
 
@@ -303,7 +334,80 @@ Hammadde işlenerek mamule ya da yarı mamule dönüşür.
 
 --- 
 
+## LFA1 
 
+<img width="916" height="297" alt="32_lfa1" src="https://github.com/user-attachments/assets/330b9e5b-17d0-4eef-9d4c-16dfccc867d6" />
+
+## LFB1
+
+<img width="933" height="305" alt="33_lfb1" src="https://github.com/user-attachments/assets/6cfa48e4-5e80-43ad-901e-cdb940f848e0" />
+
+## LFM1
+
+<img width="853" height="305" alt="34_lfm1" src="https://github.com/user-attachments/assets/3981861d-f47b-4dda-ab7e-66d75edcf612" />
+
+
+---
+
+## ME11 -> Bilgi Kaydı Oluşturma 
+
+<img width="538" height="404" alt="35_bilgi_kaydi" src="https://github.com/user-attachments/assets/191ffe9e-f95a-417d-80ef-824352122064" />
+
++ Satıcı numarası LFA1 tablosundan bulunabilir.
+
++ Malzeme numarası MARA tablosundan bulunabilir.
+
+### Satıcı Malzeme Numarası 
+
+<img width="709" height="642" alt="36_bilgi_kaydi_2" src="https://github.com/user-attachments/assets/af0a2d96-406b-486b-b988-d8cb7dbd8621" />
+
++ Satıcının kendi sisteminde kullandığı malzeme numarasını ifade eder.
+
++ **Amaç:** Satıcı ile iletişimde karışıklığı önlemek 
+  + Satıcı:
+    + "MAT-100045" diye bir kodu bilmez
+    + Kendi sisteminde "ABC-5678" kodunu kullanır
+  + Bu alan sayesinde:
+    + Satınalma siparişinde
+    + Çıktılarda
+    + Teklif / sipariş belgelerinde, **satıcının bildiği kod otomatik gösterilir**.
+  + A şirketi B şirketinden mal almak için satın alma siparişi açsın. B şirketi de A şirketine mal satmak için satış siparişi açsın. Satın alma ve satış siparişlerinde bu malzeme numarası kullanılır (IDOC'lar ile iletişim).
+ 
+<img width="719" height="639" alt="37_bilgi_kaydi_3" src="https://github.com/user-attachments/assets/071ca852-c45b-4f54-a460-eac9c502397f" />
+
++ Satıcı malzeme numarasını girdikten sonra karşımıza bu ekran çıkyor.
+
++ Planlanan teslimat süresi 3 gün olarak belirlendi.
+
++ Standart miktar 1 girildi ve "MG-tld. FK" yani mal girişi olmadan fatura kesilmesin işaretlendi.
+
++ "TslFzlTol" 20 olarak belirlendi. Yani mal yüzde 20 daha fazla gelirse depoya al, fazlasını alma.
+
++ Koşullar kısmında daha uygun anlaşılan fiyat belirlendi.
+
++ **ME12** bilgi kaydı güncelleme ve **ME13** bilgi kaydı görüntüleme için kullanılır.
+
+---
+
+## EINA - Bilgi Kaydı Görüntüleme 
+
+<img width="1060" height="324" alt="38_eina" src="https://github.com/user-attachments/assets/f8e3d9c4-96af-4476-b42c-c71ec404b92b" />
+
++ SE16N transaction kodundan EINA tablosunu açıyoruz.
+
++ Malzeme yazan yere malzeme numarasını (4451) giriyoruz.
+
++ Oluşturulan bilgi kaydının detaylı bilgilerini getirir. 
+
+---
+
+## EINE - Satın Alma Organizasyonu Verileri
+
+<img width="1107" height="348" alt="39_eine" src="https://github.com/user-attachments/assets/2cf62691-e109-4cd9-9759-8dd10fa32746" />
+
++ EINA tablosunda çıkan bilgi kaydı numarasını kopyalayıp bu tabloda ilgili yere yapıştırıyoruz.
+
++ Hangi satın alma organizasyonu hangi üretim yerinde var bunu görmüş oluruz.
 
 
 
