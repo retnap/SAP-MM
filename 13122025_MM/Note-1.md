@@ -1,4 +1,4 @@
-# SAP MM Modülüne Genel Bakış 
+# :mag: SAP MM Modülüne Genel Bakış 
 
 <img width="1023" height="448" alt="Ekran Resmi 2025-12-18 14 12 28" src="https://github.com/user-attachments/assets/42147d11-bf0c-472f-87d3-2b7164134615" />
 
@@ -8,7 +8,7 @@
 
 ---
 
-# SAP MM Organizasyonel Yapı 
+# :mag: SAP MM Organizasyonel Yapı 
 
 <img width="1025" height="577" alt="Ekran Resmi 2025-12-18 14 16 24" src="https://github.com/user-attachments/assets/0993da44-30f2-4bfa-82f9-7d2748968d9b" />
 
@@ -50,7 +50,7 @@
 
  ---
  
-# Ana Veri
+# :mag: Ana Veri
 
 <img width="689" height="493" alt="Ekran Resmi 2025-12-18 14 41 31" src="https://github.com/user-attachments/assets/2868ad07-9d10-46b8-b693-3b1f89abead6" />
 
@@ -69,7 +69,7 @@
 + **Kotalama:** Bir ürünün yüzde kaç oranında ve kimden tedarik edinilebileceğini gösteren ekran.
 
 
-## Malzeme Ana Verisi 
+## :bookmark_tabs: Malzeme Ana Verisi 
 
 <img width="1019" height="576" alt="Ekran Resmi 2025-12-18 14 52 45" src="https://github.com/user-attachments/assets/8820181e-cdf9-45cc-931d-505f9d9d19e9" />
 
@@ -81,13 +81,13 @@
 
 ---
 
-## Satıcı Ana Verisi 
+## :bookmark_tabs: Satıcı Ana Verisi 
   
 <img width="698" height="463" alt="Ekran Resmi 2025-12-18 15 04 09" src="https://github.com/user-attachments/assets/9fff57b7-8daa-48ce-995f-7e896c362b8d" />
 
 ---
 
-## Satın Alma Bilgi Kaydı 
+## :bookmark_tabs: Satın Alma Bilgi Kaydı 
 
 <img width="774" height="487" alt="Ekran Resmi 2025-12-18 15 05 34" src="https://github.com/user-attachments/assets/2fb7cf42-e32a-4c40-923e-dcd611700a03" />
 
@@ -107,7 +107,7 @@
 
 ---
 
-## Satıcı Listesi 
+## :bookmark_tabs: Satıcı Listesi 
 
 <img width="728" height="421" alt="Ekran Resmi 2025-12-18 15 16 39" src="https://github.com/user-attachments/assets/a7d149de-cb2a-4c6e-b38e-dc1e116fadce" />
 
@@ -115,7 +115,7 @@
 
 ---
 
-## Kotalama 
+## :bookmark_tabs: Kotalama 
 
 <img width="701" height="362" alt="Ekran Resmi 2025-12-18 15 18 14" src="https://github.com/user-attachments/assets/c63f3736-f4d8-4c46-9ecf-0ac5d30847c1" />
 
@@ -123,13 +123,13 @@
 
 ---
 
-# Standart Satın Alma Süreci 
+# :mag: Standart Satın Alma Süreci 
 
 <img width="824" height="482" alt="Ekran Resmi 2025-12-18 15 20 02" src="https://github.com/user-attachments/assets/c165ce33-ce25-438c-926f-2cc671ffed3c" />
 
 + Sözleşme **miktar bazlı** ya da **değer bazlı** olabilir.
 
-## Standart Satın Alma Süreci Adımları 
+## :bookmark_tabs: Standart Satın Alma Süreci Adımları 
 
 <img width="711" height="429" alt="Ekran Resmi 2025-12-18 15 30 46" src="https://github.com/user-attachments/assets/77260aed-f8a9-4fc8-9dd1-1402b27ae4c9" />
 
@@ -151,7 +151,7 @@
 
 ---
 
-## MM01 -> Malzeme Yaratma Ekranı 
+## :bookmark_tabs: MM01 -> Malzeme Yaratma Ekranı 
 
 <img width="837" height="617" alt="13_mm01_1" src="https://github.com/user-attachments/assets/1c47eae0-e7e9-4c2e-aade-7e7873ee84f1" />
 
@@ -216,20 +216,20 @@ Hammadde işlenerek mamule ya da yarı mamule dönüşür.
 + **NOT:** Oluşturduğumuz malzemeye atanan kod "4451".    
 --- 
 
-## MM02 -> Malzeme Değiştirme Ekranı 
+## :bookmark_tabs: MM02 -> Malzeme Değiştirme Ekranı 
 
 <img width="764" height="620" alt="19_mm02_1" src="https://github.com/user-attachments/assets/1392ec70-8c0d-4a04-8b2f-311b0dd7b0d0" />
 
 <img width="716" height="622" alt="20_mm02_2" src="https://github.com/user-attachments/assets/532d29de-057a-47dd-9b00-d25c78fe6e68" />
 
-## MM03 -> Malzeme Görüntüleme Ekranı 
+## :bookmark_tabs: MM03 -> Malzeme Görüntüleme Ekranı 
 
 <img width="722" height="620" alt="21_mm03_1" src="https://github.com/user-attachments/assets/8830c513-ac25-4339-899d-8ee403c86b1e" />
 
 
 ---
 
-## BP -> Muhatap Düzenleme 
+## :bookmark_tabs: BP -> Muhatap Düzenleme 
 
 + İş ortağı anlamına gelir. Ona ya mal satılıyordur ya da ondan mal alınıyordur.
 
@@ -334,22 +334,28 @@ Hammadde işlenerek mamule ya da yarı mamule dönüşür.
 
 --- 
 
-## LFA1 
+## :bookmark_tabs: LFA1 
 
 <img width="916" height="297" alt="32_lfa1" src="https://github.com/user-attachments/assets/330b9e5b-17d0-4eef-9d4c-16dfccc867d6" />
 
-## LFB1
+Genel satıcı ana verilerinin bulunduğu tablodur.
+
+## :bookmark_tabs: LFB1
 
 <img width="933" height="305" alt="33_lfb1" src="https://github.com/user-attachments/assets/6cfa48e4-5e80-43ad-901e-cdb940f848e0" />
 
-## LFM1
+Şirket kodu bazında satıcı ana verilerinin bulunduğu tablodur. 
+
+## :bookmark_tabs: LFM1
 
 <img width="853" height="305" alt="34_lfm1" src="https://github.com/user-attachments/assets/3981861d-f47b-4dda-ab7e-66d75edcf612" />
+
+Satın alma organizasyonu bazlı satıcı ana verilerinin bulunduğu tablodur. 
 
 
 ---
 
-## ME11 -> Bilgi Kaydı Oluşturma 
+## :bookmark_tabs: ME11 -> Bilgi Kaydı Oluşturma 
 
 <img width="538" height="404" alt="35_bilgi_kaydi" src="https://github.com/user-attachments/assets/191ffe9e-f95a-417d-80ef-824352122064" />
 
@@ -357,7 +363,7 @@ Hammadde işlenerek mamule ya da yarı mamule dönüşür.
 
 + Malzeme numarası MARA tablosundan bulunabilir.
 
-### Satıcı Malzeme Numarası 
+### :pushpin: Satıcı Malzeme Numarası 
 
 <img width="709" height="642" alt="36_bilgi_kaydi_2" src="https://github.com/user-attachments/assets/af0a2d96-406b-486b-b988-d8cb7dbd8621" />
 
@@ -389,7 +395,7 @@ Hammadde işlenerek mamule ya da yarı mamule dönüşür.
 
 ---
 
-## EINA - Bilgi Kaydı Görüntüleme 
+## :bookmark_tabs: EINA - Bilgi Kaydı Görüntüleme 
 
 <img width="1060" height="324" alt="38_eina" src="https://github.com/user-attachments/assets/f8e3d9c4-96af-4476-b42c-c71ec404b92b" />
 
@@ -401,7 +407,7 @@ Hammadde işlenerek mamule ya da yarı mamule dönüşür.
 
 ---
 
-## EINE - Satın Alma Organizasyonu Verileri
+## :bookmark_tabs: EINE - Satın Alma Organizasyonu Verileri
 
 <img width="1107" height="348" alt="39_eine" src="https://github.com/user-attachments/assets/2cf62691-e109-4cd9-9759-8dd10fa32746" />
 
